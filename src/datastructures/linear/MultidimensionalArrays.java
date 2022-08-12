@@ -1,13 +1,13 @@
-import javax.management.relation.Role;
+package datastructures.linear;
 
 class MultidimensionalArrays {
     public static void main(String[] arg) {
-        System.out.println("Two Dimensional Array Example");
+        System.out.println("Two Dimensional datastructures.linear.Array Example");
         System.out.println("_____________________________");
         TwoDimensionalArray obj = new TwoDimensionalArray();
         obj.displayArray();
         System.out.println("");
-        System.out.println("Three Dimensional Array Example");
+        System.out.println("Three Dimensional datastructures.linear.Array Example");
         System.out.println("_____________________________");
         ThreeDimensionalArray objt = new ThreeDimensionalArray();
         objt.displayArray();
