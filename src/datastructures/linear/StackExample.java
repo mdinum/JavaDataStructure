@@ -1,6 +1,7 @@
 package datastructures.linear;
 
 import java.util.EmptyStackException;
+import java.util.Iterator;
 import java.util.Stack;
 
 public class StackExample {
@@ -55,8 +56,15 @@ class StackImplementation{
         peekData();
         displayData();
         searchData(67);
+        insertData(11);
+        insertData(61);
+        insertData(7);
+        sortStack();
+        displayData();
 
         iterateStack();
+        displayData();
+        popAllData();
         displayData();
         popData();
         displayData();
@@ -100,6 +108,11 @@ class StackImplementation{
         }
     }
 
+    public void sortStack(){
+        System.out.println("---------sort() Operation------------");
+        stackSpecificObj.sort(null);
+    }
+
     public void displayData(){
         System.out.println("---------Display Stack------------");
         System.out.println(stackSpecificObj);
@@ -107,6 +120,14 @@ class StackImplementation{
 
     public void iterateStack(){
         System.out.println("---------Iterate Stack------------");
+        Iterator it = stackSpecificObj.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+    }
+
+    public void popAllData(){
+        System.out.println("---------pop() Operation for all------------");
         while(!stackSpecificObj.empty()){
             System.out.println(stackSpecificObj.pop());
         }
