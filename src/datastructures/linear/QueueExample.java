@@ -26,15 +26,15 @@ public class QueueExample {
          */
 
         //Queue implementation Using One Dimensional Array
-        /*OneDimensionalArrayAsAQueue qu1 = new OneDimensionalArrayAsAQueue(5);
-        qu1.runQueue();*/
+        OneDimensionalArrayAsAQueue qu1 = new OneDimensionalArrayAsAQueue(5);
+        qu1.runQueue();
 
-//        QueueExampleRun pq = new QueueExampleRun(new PriorityQueue<>());
-//        pq.runQueue();
+        QueueExampleRun pq = new QueueExampleRun(new PriorityQueue<>());
+        pq.runQueue();
         QueueExampleRun ad = new QueueExampleRun(new ArrayDeque<>());
         ad.runQueue();
-//        QueueExampleRun ll = new QueueExampleRun(new LinkedList<>());
-//        ll.runQueue();
+        QueueExampleRun ll = new QueueExampleRun(new LinkedList<>());
+        ll.runQueue();
     }
 }
 
