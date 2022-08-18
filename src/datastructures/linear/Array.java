@@ -1,3 +1,5 @@
+package datastructures.linear;
+
 import java.util.Arrays;
 
 class Array{
@@ -29,7 +31,7 @@ class ArraySample{
     float floatArray[];
     double doubleArray[];
     char charArray[];
-    //Object Array
+    //Object datastructures.linear.Array
     Object objectArray[];
 
     //combining both statements (Declaration and Instantiating) in one
@@ -38,7 +40,7 @@ class ArraySample{
     //Defult constructor
     public ArraySample(){
         /*
-        Instantiating an Array
+        Instantiating an datastructures.linear.Array
         ______________________
         var-name = new type [size];
         */
@@ -61,7 +63,7 @@ class ArraySample{
 
     public void sortArray(){
         Arrays.sort(intArray1);
-        System.out.println("---------Sorted Array---------");
+        System.out.println("---------Sorted datastructures.linear.Array---------");
         for (int iterable_element : intArray1) {
             System.out.println(iterable_element);
         }
@@ -77,15 +79,15 @@ class ArraySample{
     }
 
     public void displayArray(){
-        //Array Length
-        System.out.println("Array size = "+stringArray.length);
+        //datastructures.linear.Array Length
+        System.out.println("datastructures.linear.Array size = "+stringArray.length);
 
         // accessing the elements of the specified array
         for (int i = 0; i < stringArray.length; i++)
             System.out.println("Element at index " + i + " : " + stringArray[i]);
 
         
-        System.out.println("Array size = "+intArray1.length);
+        System.out.println("datastructures.linear.Array size = "+intArray1.length);
 
         for (int iterable_element : intArray1) {
             System.out.println(iterable_element);
